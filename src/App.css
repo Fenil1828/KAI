@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+*{
+
+  box-sizing: border-box;
+
+}
+
+#root{
+
+  animation: fadeIn 1.5s;
+}
+
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.krupixi-title {
+  /* font-family: 'Michroma', 'Inter', sans-serif; */
+    font-family: 'Michroma', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+    scrollbar-width: none;
+}
+
+/* Ensure the container remains scrollable */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+}
