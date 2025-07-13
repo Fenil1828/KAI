@@ -1,5 +1,5 @@
 // Get the API base URL from environment variables or use localhost as fallback
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://kai-f1.vercel.app/api"
 
 // In production, this will be set by Vercel environment variables
 
