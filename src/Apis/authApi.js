@@ -116,7 +116,7 @@ import axios from "axios";
 
 // Get Google Auth URL
 export const getGoogleAuthUrl = async () => {
-  const res = await axios.get('http://localhost:3000/api/auth/google/url', {
+  const res = await axios.get('https://kai-b1.vercel.app/api/auth/google/url', {
     withCredentials: true
   });
   return res.data.url;
@@ -125,7 +125,7 @@ export const getGoogleAuthUrl = async () => {
 // Google login API
 export const googleLoginApi = async (tokenId) => {
   const res = await axios.post(
-    'http://localhost:3000/api/auth/google/login',
+    'https://kai-b1.vercel.app/api/auth/google/login',
     { tokenId },
     { withCredentials: true }
   );
