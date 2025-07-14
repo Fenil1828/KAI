@@ -15,13 +15,14 @@ database.dbConnect();
 
 // CORS configuration (MUST be before routes)
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
-        ? [process.env.FRONTEND_URL, 'https://*.vercel.app'] // Production URLs
-        : 'http://localhost:5173', // Development URL
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+  origin: process.env.NODE_ENV === 'production'
+    ? ['https://kai-f1.vercel.app'] // Only allow your deployed frontend
+    : 'http://localhost:5173',      // Local dev frontend
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 // Body parsing middleware
 app.use(express.json());
